@@ -24,5 +24,14 @@ public class Main {
         for (int a1 = 10; a1 >= 1; a1--) {
             System.out.print(" "+a1+" ");
         }
+        // задача №3
+        System.out.println("Задача №3");
+        int population = 12000000;
+        for (int year = 1; year <= 10; year++) {
+            int birthRate = 17 * population / 1000;
+            int mortalityRate = 8 * population / 1000;
+            population = population + birthRate - mortalityRate;
+            System.out.println("Год " + year + ", численность населения составляет " + population);
+        }
         }
     }
