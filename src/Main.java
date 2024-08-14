@@ -33,5 +33,19 @@ public class Main {
             population = population + birthRate - mortalityRate;
             System.out.println("Год " + year + ", численность населения составляет " + population);
         }
+        // задача №4
+        System.out.println("Задача №4");
+        int vklad1 = 15000;
+        int summa1 = 0;
+        int month = 0;
+        summa1 = summa1 + vklad1;
+        do {
+            System.out.println("Месяц " + month + ", накоплений " + summa1);
+            summa1 = summa1 + summa1 / 100 * 7;
+            month = month + 1;
+        }
+        while ( summa1 <= 12_000_000);{
+                System.out.println("Количество месяцев равно " + month);
+            }
         }
     }
