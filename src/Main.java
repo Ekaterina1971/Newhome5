@@ -80,6 +80,15 @@ public class Main {
                 System.out.println("Сегодня пятница, " + friday + " -е число. Необходимо подготовить отчет");
                 friday += 7;
             }
+        // задача №8
+        System.out.println("Задача №8");
+            int yearBefore = 2024 - 200;
+            int yearAfter = 2024 + 100;
+            for (int d = yearBefore; d < yearAfter; d ++){
+                if (d % 79 == 0) {
+                    System.out.println(d);
+                }
+            }
         }
     }
 }
