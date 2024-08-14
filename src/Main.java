@@ -54,9 +54,8 @@ public class Main {
         int summa2 = 0;
         int month1 = 0;
         summa2 = summa2 + vklad2;
-        for (; summa2 <= 12_000_000; month ++) {
+        for (; summa2 <= 12_000_000; month1 ++) {
             summa2 = summa2 + summa2 / 100 * 7;
-            month1 = month1 + 1;
             if (month1 % 6 == 0) {
                 System.out.println("Месяц " + month1 + ", накоплений " + summa2);
             }
