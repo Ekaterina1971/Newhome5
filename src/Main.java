@@ -5,24 +5,24 @@ public class Main {
         int vklad = 15000;
         int summa = 0;
         int i = 0;
-        while ( summa <= 2459000) {
+        while (summa <= 2459000) {
             summa = summa + summa / 100;
             summa = summa + vklad;
-            i = i+1;
+            i = i + 1;
             System.out.println("Месяц " + i + " Итого " + summa);
-            }
+        }
         // Задача №2
         System.out.println(" Задача №2");
         int a = 1;
         while (a <= 10) {
-            System.out.print(" "+a+" ");
+            System.out.print(" " + a + " ");
             a = a + 1;
         }
         {
             System.out.println();
         }
         for (int a1 = 10; a1 >= 1; a1--) {
-            System.out.print(" "+a1+" ");
+            System.out.print(" " + a1 + " ");
         }
         // задача №3
         System.out.println("Задача №3");
@@ -44,8 +44,23 @@ public class Main {
             summa1 = summa1 + summa1 / 100 * 7;
             month = month + 1;
         }
-        while ( summa1 <= 12_000_000);{
-                System.out.println("Количество месяцев равно " + month);
+        while (summa1 <= 12_000_000);
+        {
+            System.out.println("Количество месяцев равно " + month);
+        }
+        // задача №5
+        System.out.println("Задача №5");
+        int vklad2 = 15000;
+        int summa2 = 0;
+        int month1 = 0;
+        summa2 = summa2 + vklad2;
+        for (; summa2 <= 12_000_000; month ++) {
+            summa2 = summa2 + summa2 / 100 * 7;
+            month1 = month1 + 1;
+            if (month1 % 6 == 0) {
+                System.out.println("Месяц " + month1 + ", накоплений " + summa2);
             }
         }
+        System.out.println("Количество месяцев равно " + month1);
     }
+}
