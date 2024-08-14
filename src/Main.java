@@ -73,6 +73,13 @@ public class Main {
             if (month2 % 6 == 0) {
                 System.out.println("Месяц " + month2 +" , сумма накоплений равна " + summa3);
             }
+        // задача №7
+        System.out.println("Задача №7");
+            int friday = 1;
+            while ( friday <= 31) {
+                System.out.println("Сегодня пятница, " + friday + " -е число. Необходимо подготовить отчет");
+                friday += 7;
+            }
         }
     }
 }
