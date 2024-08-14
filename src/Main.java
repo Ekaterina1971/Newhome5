@@ -61,5 +61,18 @@ public class Main {
             }
         }
         System.out.println("Количество месяцев равно " + month1);
+
+        // Задача №6
+        System.out.println("Задача №6");
+        int vklad3 = 15000;
+        int summa3 = 0;
+        int month2 = 0;
+        summa3 = summa3 + vklad3;
+        for (; month2 <= 108; month2 ++) {
+            summa3 = summa3 + summa3 / 100 * 7;
+            if (month2 % 6 == 0) {
+                System.out.println("Месяц " + month2 +" , сумма накоплений равна " + summa3);
+            }
+        }
     }
 }
